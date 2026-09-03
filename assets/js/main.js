@@ -194,7 +194,7 @@
         var cat = btn.getAttribute("data-filter");
         filtros.forEach(function (b) { b.setAttribute("aria-selected", String(b === btn)); });
         cards.forEach(function (card) {
-          var mostra = cat === "Todos" || card.getAttribute("data-cat") === cat;
+          var mostra = cat === "Todos" || (card.getAttribute("data-cat") || "").split(" ").indexOf(cat) > -1;
           card.hidden = !mostra;
           if (mostra) card.classList.add("in");
         });
