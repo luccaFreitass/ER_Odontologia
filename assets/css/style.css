@@ -196,9 +196,6 @@ em{font-style:italic;color:var(--gold)}
 /* A foto entra inteira: o painel assume a proporcao do arquivo e a imagem
    nunca e recortada, em nenhuma largura de tela. */
 .hero-media{position:relative;justify-self:end;width:min(100%,412px);isolation:isolate}
-.hero-media::before{content:"";position:absolute;inset:26px -34px -34px 26px;z-index:-1;
-  background:linear-gradient(150deg,#EBDCB6,#A98B45 55%,#7E6528);
-  border-radius:var(--r-panel);filter:blur(22px);opacity:.9;pointer-events:none}
 .hero-panel{position:relative;border-radius:var(--r-panel);overflow:hidden;
   box-shadow:0 40px 80px -52px rgba(22,21,15,.5)}
 .hero-panel img{width:100%;height:auto;display:block}
